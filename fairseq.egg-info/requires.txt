@@ -1,0 +1,7 @@
+cffi
+fastBPE
+numpy
+regex
+sacrebleu
+torch
+tqdm
