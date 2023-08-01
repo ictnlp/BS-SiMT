@@ -12,7 +12,7 @@ Our method is implemented based on the open-source toolkit [Fairseq](https://git
 * Install fairseq:
 
 ```
-git clone https://github.com/ictnlp/PED-SiMT.git
-cd PED-SiMT-main
+git clone https://github.com/ictnlp/BS-SiMT.git
+cd BS-SiMT
 pip install --editable ./
 ```
