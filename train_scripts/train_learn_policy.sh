@@ -32,4 +32,6 @@ python train.py \
   --reset-lr-scheduler \
   --left-bound ${LEFTBOUND} \
   --right-bound ${RIGHTBOUND} \
+  --classerifier-training \
+  --action-loss-smoothing 0.1 \
   --save-dir ${MODELFILE}
