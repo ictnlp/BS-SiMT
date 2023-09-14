@@ -171,9 +171,9 @@ export CUDA_VISIBLE_DEVICES=0
 
 MODELFILE=dir_to_save_model
 DATAFILE=dir_to_data
-REFERENCE=PATH_TO_REFERENCE
+REFERENCE=oath_to_reference
 
-python generate.py ${data} --path $MODELFILE/average-model.pt --batch-size 250 --beam 1 --left-pad-source False --remove-bpe > pred.out
+python generate.py ${MODELFILE} --path $MODELFILE/average-model.pt --batch-size 250 --beam 1 --left-pad-source False --remove-bpe > pred.out
 
 grep ^H pred.out | cut -f1,3- | cut -c3- | sort -k1n | cut -f2- > pred.translation
 multi-bleu.perl -lc ${REFERENCE} < pred.translation
